@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristina & Andi | Dasma Jonë</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-names">K & A</span>
+        </div>
+        <nav class="nav">
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#historia">HISTORIA</a></li>
+                <li><a href="#detajet">DETAJET</a></li>
+                <li><a href="#vendi">VENDI</a></li>
+            </ul>
+            <a href="#rsvp" class="btn-rsvp">KONFIRMO</a>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#historia">Historia Jonë</a></li>
+            <li><a href="#detajet">Detajet</a></li>
+            <li><a href="#vendi">Vendi</a></li>
+            <li><a href="#rsvp">Konfirmo Pjesëmarrjen</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section with Video -->
+    <section class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/video/wedding-hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">JU FTOJMË NË DASMËN TONË</p>
+            <h1 class="hero-title">
+                Kristina<br>
+                <span class="ampersand">&</span><br>
+                Andi
+            </h1>
+            <p class="hero-date">15 Qershor 2025 • Tiranë</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Zbulo më shumë</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="historia" class="section section-story">
+        <div class="section-images">
+            <div class="image-wrapper image-left" data-scroll>
+                <img src="assets/images/couple-1.jpg" alt="Kristina dhe Andi">
+            </div>
+            <div class="image-wrapper image-right" data-scroll>
+                <img src="assets/images/couple-2.jpg" alt="Momenti ynë">
+            </div>
+        </div>
+        <div class="story-text-container">
+            <h2 class="section-title outline-text" data-scroll>Historia</h2>
+            <h2 class="section-title outline-text" data-scroll>Jonë</h2>
+        </div>
+    </section>
+
+    <!-- Story Content -->
+    <section class="section section-story-content">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text" data-scroll>
+                    <p class="story-lead">
+                        Çdo histori dashurie ka fillimin e saj të veçantë.
+                        E jona filloi në një mbrëmje pranvere, kur fati na bashkoi
+                        në mënyrën më të papritur.
+                    </p>
+                    <p>
+                        Pas pesë viteve plot aventura, gëzime dhe sfida të përbashkëta,
+                        jemi gati të fillojmë kapitullin e ri të jetës tonë së bashku.
+                        Dhe dëshirojmë ta ndajmë këtë moment special me ju.
+                    </p>
+                    <a href="#detajet" class="btn-outline">LEXO MË SHUMË</a>
+                </div>
+                <div class="story-image" data-scroll>
+                    <img src="assets/images/couple-3.jpg" alt="Ne së bashku">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="detajet" class="section section-details">
+        <div class="details-header">
+            <h2 class="section-title-large" data-scroll>Çfarë kemi</h2>
+            <h2 class="section-title-large" data-scroll>organizuar për ju</h2>
+        </div>
+
+        <div class="details-grid">
+            <div class="detail-card" data-scroll>
+                <div class="detail-image">
+                    <img src="assets/images/ceremony.jpg" alt="Ceremonia">
+                </div>
+                <div class="detail-content">
+                    <h3>Ceremonia</h3>
+                    <p>Ceremonia fetare do të mbahet në Kishën Ortodokse të Shën Prokopit, e ndjekur nga bekimi dhe lutjet për jetën tonë të re.</p>
+                    <span class="detail-time">Ora 14:00</span>
+                </div>
+            </div>
+
+            <div class="detail-card" data-scroll>
+                <div class="detail-image">
+                    <img src="assets/images/reception.jpg" alt="Pritja">
+                </div>
+                <div class="detail-content">
+                    <h3>Koktej & Pritja</h3>
+                    <p>Pas ceremonisë, ju mirëpresim në ambientet elegante të Hotel Rogner për një koktej special dhe darkë festive.</p>
+                    <span class="detail-time">Ora 17:00</span>
+                </div>
+            </div>
+
+            <div class="detail-card" data-scroll>
+                <div class="detail-image">
+                    <img src="assets/images/party.jpg" alt="Festa">
+                </div>
+                <div class="detail-content">
+                    <h3>Festa</h3>
+                    <p>Muzikë, valle dhe gëzim deri në orët e para të mëngjesit. Përgatituni të kërceni dhe të festoni me ne!</p>
+                    <span class="detail-time">Ora 22:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section section-timeline">
+        <div class="container">
+            <div class="timeline">
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-time">14:00</div>
+                    <div class="timeline-content">
+                        <h4>Ceremonia Fetare</h4>
+                        <p>Kisha Ortodokse e Shën Prokopit</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-time">16:00</div>
+                    <div class="timeline-content">
+                        <h4>Sesioni Fotografik</h4>
+                        <p>Parku i Liqenit Artificial</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-time">17:00</div>
+                    <div class="timeline-content">
+                        <h4>Koktej i Mirëseardhjes</h4>
+                        <p>Hotel Rogner - Kopshti</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-time">19:00</div>
+                    <div class="timeline-content">
+                        <h4>Darka Festive</h4>
+                        <p>Hotel Rogner - Salla Kristal</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-time">22:00</div>
+                    <div class="timeline-content">
+                        <h4>Vallëzimi i Parë</h4>
+                        <p>Momenti special</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-time">23:00</div>
+                    <div class="timeline-content">
+                        <h4>Festa Vazhdon</h4>
+                        <p>Muzikë dhe argëtim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Photo Section (like MOOSER map) -->
+    <section class="section section-map">
+        <div class="map-container">
+            <div class="map-illustration">
+                <!-- Replace this with your own photo -->
+                <img src="assets/images/venue-aerial.jpg" alt="Pamje nga vendi" class="map-image">
+
+                <!-- Interactive Markers - adjust top/left % to position on your photo -->
+                <div class="map-marker" data-location="church" style="top: 30%; left: 20%;">
+                    <span class="marker-icon">+</span>
+                    <div class="marker-popup">
+                        <h4>Kisha</h4>
+                        <p>Ceremonia Fetare</p>
+                        <span class="marker-time">Ora 14:00</span>
+                    </div>
+                </div>
+
+                <div class="map-marker" data-location="venue" style="top: 45%; left: 55%;">
+                    <span class="marker-icon">+</span>
+                    <div class="marker-popup">
+                        <h4>Hotel Rogner</h4>
+                        <p>Pritja & Festa</p>
+                        <span class="marker-time">Ora 17:00</span>
+                    </div>
+                </div>
+
+                <div class="map-marker" data-location="park" style="top: 60%; left: 35%;">
+                    <span class="marker-icon">+</span>
+                    <div class="marker-popup">
+                        <h4>Parku i Liqenit</h4>
+                        <p>Sesioni Fotografik</p>
+                        <span class="marker-time">Ora 16:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="vendi" class="section section-location">
+        <div class="location-hero">
+            <div class="location-image-bg">
+                <img src="assets/images/venue.jpg" alt="Hotel Rogner">
+            </div>
+            <div class="location-overlay"></div>
+            <div class="location-content" data-scroll>
+                <p class="location-subtitle">VENDI I FESTËS</p>
+                <h2 class="location-title">Hotel Rogner<br>Tiranë</h2>
+                <p class="location-address">Bulevardi "Dëshmorët e Kombit"<br>Tiranë, Shqipëri</p>
+                <a href="https://maps.google.com" target="_blank" class="btn-location">SHIKO NË HARTË</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section class="section section-accommodation">
+        <div class="container">
+            <div class="accommodation-grid">
+                <div class="accommodation-text" data-scroll>
+                    <h3>Akomodimi</h3>
+                    <p>
+                        Për mysafirët tanë që vijnë nga larg, kemi rezervuar
+                        dhoma me çmime speciale në Hotel Rogner. Ju lutem na
+                        kontaktoni për më shumë informacion.
+                    </p>
+                    <div class="accommodation-info">
+                        <div class="info-item">
+                            <span class="info-label">Check-in</span>
+                            <span class="info-value">14 Qershor 2025</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Check-out</span>
+                            <span class="info-value">16 Qershor 2025</span>
+                        </div>
+                    </div>
+                    <a href="#rsvp" class="btn-outline">REZERVO</a>
+                </div>
+                <div class="accommodation-images" data-scroll>
+                    <img src="assets/images/hotel-room.jpg" alt="Dhoma e hotelit">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="section section-rsvp">
+        <div class="rsvp-container">
+            <div class="rsvp-content" data-scroll>
+                <p class="rsvp-subtitle">KONFIRMO PJESËMARRJEN</p>
+                <h2 class="rsvp-title">Na Bashkoheni?</h2>
+                <p class="rsvp-text">
+                    Ju lutem konfirmoni pjesëmarrjen tuaj deri më 1 Maj 2025
+                </p>
+
+                <form class="rsvp-form" id="rsvpForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Emri juaj i plotë</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="guests" name="guests" required>
+                            <option value="">Numri i mysafirëve</option>
+                            <option value="1">1 person</option>
+                            <option value="2">2 persona</option>
+                            <option value="3">3 persona</option>
+                            <option value="4">4 persona</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="attendance" name="attendance" required>
+                            <option value="">Do të merrni pjesë?</option>
+                            <option value="yes">Po, me kënaqësi!</option>
+                            <option value="no">Na vjen keq, nuk mundemi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="dietary" name="dietary" rows="3"></textarea>
+                        <label for="dietary">Alergji ose preferenca ushqimore</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="3"></textarea>
+                        <label for="message">Mesazh për çiftin (opsional)</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">DËRGO KONFIRMIMIN</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Registry Section -->
+    <section class="section section-gifts">
+        <div class="container">
+            <div class="gifts-content" data-scroll>
+                <h3>Dhurata</h3>
+                <p>
+                    Prezenca juaj është dhurata më e çmuar për ne.
+                    Megjithatë, nëse dëshironi të na bëni një dhuratë,
+                    do ta vlerësonim kontributin tuaj për muajin tonë të mjaltit.
+                </p>
+                <div class="gift-box">
+                    <span class="gift-icon">♡</span>
+                    <p>Kontribut për Muajin e Mjaltit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="section section-countdown">
+        <div class="countdown-container" data-scroll>
+            <h3>Numërim mbrapsht deri në ditën e madhe</h3>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">000</span>
+                    <span class="countdown-label">Ditë</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Orë</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minuta</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Sekonda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-names">Kristina & Andi</div>
+            <p class="footer-date">15 Qershor 2025</p>
+            <p class="footer-message">Mezi presim t'ju shohim!</p>
+            <div class="footer-hearts">♡ ♡ ♡</div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/355XXXXXXXXX?text=Përshëndetje!%20Dua%20të%20konfirmoj%20pjesëmarrjen%20në%20dasmë."
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Na kontaktoni në WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-tooltip">Na shkruani</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
