@@ -1449,6 +1449,324 @@ img {
 }
 
 /* ==========================================================================
+   Enhanced Mobile Responsiveness
+   ========================================================================== */
+
+/* Map/Photo Section Mobile */
+@media (max-width: 992px) {
+    .section-map {
+        min-height: 70vh;
+    }
+
+    .map-container {
+        height: 70vh;
+    }
+
+    .marker-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .marker-popup {
+        min-width: 150px;
+        padding: 1rem;
+    }
+
+    .marker-popup h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header Mobile */
+    .logo-names {
+        font-size: 1.4rem;
+    }
+
+    /* Hero Mobile */
+    .hero {
+        min-height: 100vh;
+        min-height: 100svh; /* Safe viewport height for mobile */
+    }
+
+    .hero-subtitle {
+        font-size: 0.65rem;
+        letter-spacing: 0.2em;
+    }
+
+    .hero-date {
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+    }
+
+    .scroll-indicator {
+        bottom: 2rem;
+    }
+
+    .scroll-indicator span {
+        font-size: 0.6rem;
+    }
+
+    /* Story Section Mobile */
+    .section-story {
+        padding: 4rem 0;
+        min-height: auto;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .story-lead {
+        font-size: 1.2rem;
+    }
+
+    /* Details Section Mobile */
+    .section-details {
+        padding: 4rem 0;
+    }
+
+    .section-title-large {
+        font-size: 2rem;
+    }
+
+    .details-header {
+        margin-bottom: 3rem;
+    }
+
+    .detail-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .detail-image {
+        aspect-ratio: 16/10;
+    }
+
+    /* Map Section Mobile */
+    .section-map {
+        min-height: 60vh;
+    }
+
+    .map-container {
+        height: 60vh;
+    }
+
+    .marker-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .marker-popup {
+        min-width: 140px;
+        padding: 0.75rem 1rem;
+        bottom: calc(100% + 10px);
+    }
+
+    .marker-popup h4 {
+        font-size: 1rem;
+    }
+
+    .marker-popup p {
+        font-size: 0.75rem;
+    }
+
+    .marker-time {
+        font-size: 0.65rem;
+    }
+
+    /* Location Section Mobile */
+    .location-hero {
+        min-height: 70vh;
+    }
+
+    .location-title {
+        font-size: 2.5rem;
+    }
+
+    .location-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .location-address {
+        font-size: 0.9rem;
+    }
+
+    /* Accommodation Mobile */
+    .section-accommodation {
+        padding: 4rem 0;
+    }
+
+    .accommodation-text h3 {
+        font-size: 2rem;
+    }
+
+    /* RSVP Mobile */
+    .section-rsvp {
+        padding: 4rem 0;
+    }
+
+    .rsvp-title {
+        font-size: 2.5rem;
+    }
+
+    .rsvp-container {
+        padding: 0 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-submit {
+        padding: 1rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* Gifts Mobile */
+    .section-gifts {
+        padding: 4rem 0;
+    }
+
+    .gifts-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .gift-box {
+        padding: 1.5rem 2rem;
+    }
+
+    /* Countdown Mobile */
+    .section-countdown {
+        padding: 4rem 0;
+    }
+
+    .countdown-container h3 {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+
+    .countdown {
+        gap: 1rem;
+    }
+
+    .countdown-number {
+        font-size: 2.5rem;
+    }
+
+    .countdown-label {
+        font-size: 0.65rem;
+    }
+
+    /* Footer Mobile */
+    .footer {
+        padding: 3rem 1.5rem;
+    }
+
+    .footer-names {
+        font-size: 2rem;
+    }
+
+    /* Timeline Mobile */
+    .section-timeline {
+        padding: 4rem 0;
+    }
+
+    .timeline-time {
+        font-size: 1.5rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small devices */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .ampersand {
+        font-size: 0.5em;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-title-large {
+        font-size: 1.75rem;
+    }
+
+    .outline-text {
+        -webkit-text-stroke: 0.5px var(--color-primary);
+        text-stroke: 0.5px var(--color-primary);
+    }
+
+    .marker-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+
+    .marker-popup {
+        min-width: 120px;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .marker-popup h4 {
+        font-size: 0.9rem;
+    }
+
+    .countdown-item {
+        flex: 0 0 45%;
+    }
+
+    .countdown-number {
+        font-size: 2rem;
+    }
+
+    .btn-outline,
+    .btn-location {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.7rem;
+    }
+
+    .location-title {
+        font-size: 2rem;
+    }
+
+    .rsvp-title {
+        font-size: 2rem;
+    }
+
+    .footer-names {
+        font-size: 1.75rem;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-content {
+        padding-top: 60px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* ==========================================================================
    Utility Classes
    ========================================================================== */
 .text-center {
