@@ -208,7 +208,7 @@ function initImageReveal() {
    Countdown Timer
    ========================================================================== */
 function initCountdown() {
-    const weddingDate = new Date('June 15, 2025 14:00:00').getTime();
+    const weddingDate = new Date('June 15, 2026 14:00:00').getTime();
 
     const daysEl = document.getElementById('days');
     const hoursEl = document.getElementById('hours');
