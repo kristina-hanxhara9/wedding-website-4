@@ -217,12 +217,13 @@ function initCountdown() {
 
     if (!daysEl) return;
 
+    let isFirstRun = true;
+
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = weddingDate - now;
 
         if (distance < 0) {
-            // Wedding day has passed
             daysEl.textContent = '0';
             hoursEl.textContent = '00';
             minutesEl.textContent = '00';
@@ -235,11 +236,20 @@ function initCountdown() {
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Animate number changes
-        animateNumber(daysEl, days.toString().padStart(3, '0'));
-        animateNumber(hoursEl, hours.toString().padStart(2, '0'));
-        animateNumber(minutesEl, minutes.toString().padStart(2, '0'));
-        animateNumber(secondsEl, seconds.toString().padStart(2, '0'));
+        if (isFirstRun) {
+            // Set values directly on first load - no animation
+            daysEl.textContent = days.toString();
+            hoursEl.textContent = hours.toString().padStart(2, '0');
+            minutesEl.textContent = minutes.toString().padStart(2, '0');
+            secondsEl.textContent = seconds.toString().padStart(2, '0');
+            isFirstRun = false;
+        } else {
+            // Animate subsequent changes
+            animateNumber(daysEl, days.toString());
+            animateNumber(hoursEl, hours.toString().padStart(2, '0'));
+            animateNumber(minutesEl, minutes.toString().padStart(2, '0'));
+            animateNumber(secondsEl, seconds.toString().padStart(2, '0'));
+        }
     }
 
     function animateNumber(element, newValue) {
@@ -262,7 +272,7 @@ function initCountdown() {
         }
     });
 
-    // Initial update
+    // Initial update immediately
     updateCountdown();
 
     // Update every second
