@@ -13,6 +13,26 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Video Intro Splash Screen -->
+    <div id="intro-screen" class="intro-screen">
+        <div class="intro-content">
+            <p class="intro-names">Sinead & Andi</p>
+            <p class="intro-date">15.06.2026</p>
+            <button id="play-intro" class="intro-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+                <span>Shiko Video</span>
+            </button>
+        </div>
+        <video id="intro-video" class="intro-video" playsinline>
+            <source src="assets/video/love-snow.mp4" type="video/mp4">
+        </video>
+        <button id="skip-intro" class="skip-intro-btn">Kalo Video →</button>
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="main-content" class="main-content hidden">
     <!-- Navigation -->
     <header class="header">
         <div class="logo">
@@ -422,6 +442,7 @@
         </svg>
         <span class="whatsapp-tooltip">Na shkruani</span>
     </a>
+    </div><!-- End main-content -->
 
     <script src="js/main.js"></script>
 </body>

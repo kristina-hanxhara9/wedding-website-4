@@ -4,6 +4,83 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize intro video first
+    initIntroVideo();
+});
+
+/* ==========================================================================
+   Video Intro Splash Screen
+   ========================================================================== */
+function initIntroVideo() {
+    const introScreen = document.getElementById('intro-screen');
+    const introContent = document.querySelector('.intro-content');
+    const introVideo = document.getElementById('intro-video');
+    const playBtn = document.getElementById('play-intro');
+    const skipBtn = document.getElementById('skip-intro');
+    const mainContent = document.getElementById('main-content');
+
+    // Check if intro was already seen this session
+    if (sessionStorage.getItem('introSeen')) {
+        hideIntroShowMain();
+        return;
+    }
+
+    // Play button click
+    if (playBtn) {
+        playBtn.addEventListener('click', () => {
+            // Hide the intro content (names, date, play button)
+            introContent.classList.add('hidden');
+
+            // Show and play video
+            introVideo.classList.add('playing');
+            introVideo.play();
+
+            // Show skip button
+            skipBtn.classList.add('visible');
+        });
+    }
+
+    // Video ended - transition to main site
+    if (introVideo) {
+        introVideo.addEventListener('ended', () => {
+            transitionToMain();
+        });
+    }
+
+    // Skip button click
+    if (skipBtn) {
+        skipBtn.addEventListener('click', () => {
+            introVideo.pause();
+            transitionToMain();
+        });
+    }
+
+    function transitionToMain() {
+        // Mark intro as seen
+        sessionStorage.setItem('introSeen', 'true');
+
+        // Fade out intro screen
+        introScreen.classList.add('fade-out');
+
+        // Show main content
+        mainContent.classList.remove('hidden');
+
+        // After fade animation, hide intro completely
+        setTimeout(() => {
+            introScreen.classList.add('hidden');
+            // Initialize main site components
+            initMainSite();
+        }, 1000);
+    }
+
+    function hideIntroShowMain() {
+        introScreen.classList.add('hidden');
+        mainContent.classList.remove('hidden');
+        initMainSite();
+    }
+}
+
+function initMainSite() {
     // Initialize all components
     initNavigation();
     initScrollEffects();
@@ -12,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFormValidation();
     initSmoothScroll();
     initImageReveal();
-});
+}
 
 /* ==========================================================================
    Navigation
