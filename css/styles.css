@@ -111,16 +111,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.intro-video.playing {
     opacity: 1;
-}
-
-.intro-content.hidden {
-    display: none;
 }
 
 .skip-intro-btn {

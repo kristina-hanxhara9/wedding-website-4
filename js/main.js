@@ -13,9 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
    ========================================================================== */
 function initIntroVideo() {
     const introScreen = document.getElementById('intro-screen');
-    const introContent = document.querySelector('.intro-content');
     const introVideo = document.getElementById('intro-video');
-    const playBtn = document.getElementById('play-intro');
     const skipBtn = document.getElementById('skip-intro');
     const mainContent = document.getElementById('main-content');
 
@@ -25,23 +23,11 @@ function initIntroVideo() {
         return;
     }
 
-    // Play button click
-    if (playBtn) {
-        playBtn.addEventListener('click', () => {
-            // Hide the intro content (names, date, play button)
-            introContent.classList.add('hidden');
-
-            // Show and play video
-            introVideo.classList.add('playing');
-            introVideo.play();
-
-            // Show skip button
-            skipBtn.classList.add('visible');
-        });
-    }
-
-    // Video ended - transition to main site
+    // Video auto-plays, show it immediately
     if (introVideo) {
+        introVideo.classList.add('playing');
+
+        // Video ended - transition to main site
         introVideo.addEventListener('ended', () => {
             transitionToMain();
         });
